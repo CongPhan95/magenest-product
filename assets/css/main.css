@@ -1,0 +1,282 @@
+:root {
+  --grey-text: #9a9a9a;
+  --red-text: #eb0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  width: 100%;
+}
+
+.product {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.product__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.product__detail-image {
+  display: flex;
+}
+
+.product__image-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image__slider-img {
+  width: 35px;
+}
+
+.product__image-img {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.product__detail-detail {
+  width: 405px;
+}
+
+.product__detail-name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.product__detail-rating {
+  margin-top: 10px;
+}
+
+.rating__start {
+  display: flex;
+}
+
+.rating__star-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.rating__start-count {
+  font-size: 1.4rem;
+}
+
+.reating__start-icon-active {
+  color: #fdc456;
+}
+
+.reating__start-icon-normal,
+.rating__start-count {
+  color: var(--grey-text);
+}
+
+.product__detail-price {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.product__price-current {
+  color: var(--red-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.product__price-old {
+  color: var(--grey-text);
+  font-size: 1.4rem;
+}
+
+.product__detail-radio {
+  margin-top: 12px;
+}
+
+.product__radio-btn {
+  margin-top: 8px;
+}
+
+.product__radio-text {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+.product__detail-quantity {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity_input {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  height: 38px;
+  width: 120px;
+  padding-left: 10px;
+  font-size: 1.4rem;
+  outline: none;
+  color: var(--grey-text);
+}
+
+.product__cart-add {
+  border: 1px solid var(--red-text);
+  border-radius: 4px;
+  background-color: var(--red-text);
+  height: 38px;
+  width: 265px;
+  text-align: center;
+  font-size: 1.4rem;
+  outline: none;
+  color: #fff;
+}
+.file-custom:hover,
+.image__slider-img:hover,
+.product__cart-add:hover {
+  cursor: pointer;
+}
+
+.product__detail-descrption {
+  margin-top: 25px;
+  color: var(--grey-text);
+  padding-left: 15px;
+}
+
+.product__detail-delivery {
+  width: 300px;
+}
+
+.product__delivery-heading {
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  line-height: none;
+  text-transform: uppercase;
+  border-top: 1px solid var(--grey-text);
+  border-left: 1px solid var(--grey-text);
+  border-right: 1px solid var(--grey-text);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.product__delivery-body {
+  padding: 17px 20px;
+  border-top: 1px solid var(--grey-text);
+  border-left: 1px solid var(--grey-text);
+  border-right: 1px solid var(--grey-text);
+  border-bottom: 1px solid var(--grey-text);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.product__delivery-location > i {
+  font-size: 2.8rem;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.delivery__location {
+  font-size: 1.4rem;
+  margin-right: 15px;
+}
+
+.delivery__change {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #3374f1;
+}
+
+.product__delivery-policy > i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.product__delivery-policy {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__delivery-text {
+  flex-grow: 1;
+}
+
+.delivery__text-top {
+  font-size: 1.4rem;
+}
+
+.delivery__text-bot {
+  font-size: 1.4rem;
+  color: var(--grey-text);
+}
+
+.product__delivery-feeship {
+  font-size: 1.4rem;
+}
+
+.product__feedback {
+  margin-top: 70px;
+}
+
+.product__feedback-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #172b4d;
+}
+.product__feedback-des {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #172b4d;
+}
+
+.product__feedback-your {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.product__feedback-rating {
+  margin-top: 33px;
+  margin-left: 174px;
+}
+
+.feedback-rating__star-icon {
+  font-size: 2.4rem;
+}
+
+.feedback__textarea {
+  margin-top: 40px;
+  border: none;
+}
+
+.feedback__file {
+  margin-top: 20px;
+}
+
+.file-custom {
+  padding: 10px 40px;
+  background-color: var(--red-text);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  color: #fff;
+}
